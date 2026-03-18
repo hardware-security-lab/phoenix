@@ -6,6 +6,9 @@
 #include <sstream>
 #include <vector>
 
+/* Newer(?) g++ needs this - Mark */
+#include <algorithm>
+#include <array>
 
 typedef std::vector<dram_address> trefi_burst_t;
 typedef std::vector<trefi_burst_t> hammer_pattern_t;
