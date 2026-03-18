@@ -4,7 +4,7 @@ project(
         hammer
         VERSION     1.0.0
         DESCRIPTION "Phoenix"
-        LANGUAGES   CXX
+        LANGUAGES   C CXX
 )
 
 # ───────────  Dependencies (FetchContent) ───────────

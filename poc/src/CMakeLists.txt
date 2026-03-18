@@ -4,6 +4,7 @@ add_library(hammer_core STATIC
         dram_address.cpp
         jitted.cpp
         pattern.cpp
+        hugepage.c
 )
 
 set_source_files_properties(

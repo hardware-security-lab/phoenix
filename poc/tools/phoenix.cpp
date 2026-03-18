@@ -24,6 +24,8 @@
 
 #include "phoenix_cli.hpp"
 
+#include <hammer/hugepage.h>
+
 #define SUPERPAGE_MEM_SIZE (1UL << 30)
 
 void configure_unbuffered_output() {
@@ -210,6 +212,8 @@ static std::string get_cpu_model_string() {
 
 int main(int argc, char* argv[]) {
     auto params = parse_cli(argc, argv);
+
+    init_hugepage();
 
     static constexpr std::array<const char*, 1> AllowedModels = {
         "AMD Ryzen 7 7700X 8-Core Processor"
